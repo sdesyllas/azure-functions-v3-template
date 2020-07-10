@@ -1,9 +1,9 @@
-﻿using AzureFunctionDependencyInjection.Configurations;
+﻿using AzureFunctionV3Template.Configurations;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Threading.Tasks;
 
-namespace AzureFunctionDependencyInjection.Services
+namespace AzureFunctionV3Template.Services
 {
     public class MessageResponderService : IMessageResponderService
     {

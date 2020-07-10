@@ -1,4 +1,4 @@
-﻿namespace AzureFunctionDependencyInjection.Helpers
+﻿namespace AzureFunctionV3Template.Helpers
 {
     public class Constants
     {
