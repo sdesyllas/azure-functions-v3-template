@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace AzureFunctionDependencyInjection.Services
+namespace AzureFunctionV3Template.Services
 {
     public interface IVaultService
     {

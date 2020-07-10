@@ -1,6 +1,7 @@
-﻿using AzureFunctionDependencyInjection.Configurations;
-using AzureFunctionDependencyInjection.Helpers;
-using AzureFunctionDependencyInjection.Services;
+﻿using AzureFunctionV3Template.Configurations;
+using AzureFunctionV3Template.Helpers;
+using AzureFunctionV3Template.Services;
+using AzureFunctionV3Template;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Azure.KeyVault;
 using Microsoft.Azure.Services.AppAuthentication;
@@ -11,9 +12,9 @@ using Serilog;
 using System;
 using System.Reflection.Metadata;
 
-[assembly: FunctionsStartup(typeof(AzureFunctionDependencyInjection.Startup))]
+[assembly: FunctionsStartup(typeof(Startup))]
 
-namespace AzureFunctionDependencyInjection
+namespace AzureFunctionV3Template
 {
     /// <summary>
     /// https://medium.com/@therealjordanlee/dependency-injection-in-azure-functions-v3-7148d0574dfc
@@ -32,7 +33,7 @@ namespace AzureFunctionDependencyInjection
                     configuration.GetSection("MessageResponder").Bind(messageResponderSettings);
                 });
 
-            
+
             // Registering Serilog provider
             var logger = new LoggerConfiguration().CreateLogger();
             builder.Services.AddLogging(lb => lb.AddSerilog(logger));
