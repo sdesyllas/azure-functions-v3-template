@@ -1,4 +1,4 @@
-using AzureFunctionDependencyInjection.Services;
+using AzureFunctionV3Template.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;

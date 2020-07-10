@@ -1,4 +1,4 @@
-﻿namespace AzureFunctionDependencyInjection.Configurations
+﻿namespace AzureFunctionV3Template.Configurations
 {
     public class FunctionConfiguration
     {

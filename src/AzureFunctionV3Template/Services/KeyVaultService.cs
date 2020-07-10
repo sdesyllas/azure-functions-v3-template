@@ -1,5 +1,5 @@
-﻿using AzureFunctionDependencyInjection.Configurations;
-using AzureFunctionDependencyInjection.Helpers;
+﻿using AzureFunctionV3Template.Configurations;
+using AzureFunctionV3Template.Helpers;
 using Microsoft.Azure.KeyVault;
 using Microsoft.Azure.Services.AppAuthentication;
 using Microsoft.Extensions.Logging;
@@ -7,8 +7,15 @@ using Microsoft.Extensions.Options;
 using System;
 using System.Threading.Tasks;
 
-namespace AzureFunctionDependencyInjection.Services
+namespace AzureFunctionV3Template.Services
 {
+    /// <summary>
+    /// Keyvault service with Manager Identity connection (no cliendid, secret)
+    /// https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity?tabs=dotnet
+    /// 
+    /// It's using the system-assigned identity when deployed in azure
+    /// It's using Visual Studio account that has access to the keyvault resource when running locally 
+    /// </summary>
     public class KeyVaultService : IVaultService
     {
         private FunctionConfiguration _configuration;
