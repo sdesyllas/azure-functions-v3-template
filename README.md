@@ -1,2 +1,3 @@
 # azure-functions-v3-template
-azure-functions-v3-template with IOC, keyvault. logging and configuration
+
+This is an Azure Functions V3 template with Dependency injection, logging, configuration settings binding, keyvault integration and unit testing.
