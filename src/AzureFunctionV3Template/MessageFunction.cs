@@ -22,7 +22,7 @@ namespace AzureFunctionV3Template
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            log.LogInformation("MessageFunction - C# HTTP trigger function processed a request for GetPositiveMessage.");
 
             return new OkObjectResult(_messageResponderService.GetPositiveMessage());
         }
@@ -32,7 +32,7 @@ namespace AzureFunctionV3Template
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            log.LogInformation("MessageFunction - C# HTTP trigger function processed a request for GetNegativeMessage.");
 
             return new OkObjectResult(_messageResponderService.GetNegativeMessage());
         }
@@ -42,7 +42,7 @@ namespace AzureFunctionV3Template
         [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
         ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            log.LogInformation("MessageFunction - C# HTTP trigger function processed a request for GetSecretMessage.");
 
             return new OkObjectResult(await _messageResponderService.GetSecretMessage());
         }
