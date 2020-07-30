@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionV3Template", "AzureFunctionV3Template\AzureFunctionV3Template.csproj", "{E8A123E8-391F-4819-81E3-5FE0231B0605}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFunctionV3Template.Tests", "AzureFunctionV3Template.Tests\AzureFunctionV3Template.Tests.csproj", "{68D7BD90-850F-4B74-92A4-FADF57DA92C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctionV3Template.Tests", "AzureFunctionV3Template.Tests\AzureFunctionV3Template.Tests.csproj", "{68D7BD90-850F-4B74-92A4-FADF57DA92C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
